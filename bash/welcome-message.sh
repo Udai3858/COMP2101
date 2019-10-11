@@ -12,15 +12,18 @@
 ###############
 # Variables   #
 ###############
-title="Overlord"
-myname="dennis"
+myname="$USER"
 hostname=$(hostname)
 
 ###############
 # Main        #
 ###############
+hour=$(date +%I)
+minutes=$(date +%M)
+day=$(date +%A)
+timeofday=$(date +%p)
+
 cat <<EOF
-
-Welcome to planet $hostname, "$title $myname!"
-
+Welcome to $hostname,  "$myname"
+It is $hour:$minutes $timeofday on $day
 EOF

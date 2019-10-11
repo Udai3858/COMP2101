@@ -23,7 +23,5 @@ minutes=$(date +%M)
 day=$(date +%A)
 timeofday=$(date +%p)
 
-cat <<EOF
-Welcome to $hostname,  "$myname"
-It is $hour:$minutes $timeofday on $day
-EOF
+message="Welcome to  $hostname, $myname. It is $hour:$minutes $timeofday on $day"
+cowsay $message

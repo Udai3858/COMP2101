@@ -13,12 +13,12 @@ Rolling...
 $(( RANDOM % 6 + 1)), $(( RANDOM % 6 + 1 )) rolled
 "
 # Improve this script by adding a second line of output showing a roll of 5 six-sided dice
-echo ""
+echo "
 Rolling 5 six sided dices...
 $(( RANDOM % 6 +1)), $(( RANDOM % 6 +1)), $(( RANDOM % 6 +1)), $(( RANDOM % 6 +1)), $(( RANDOM % 6 +1)) rolled
-""
+"
 # Improve this script by adding a third line of output that rolls a single 20-sided dice
-echo ""
+echo "
 Rolling a 20 sided die.....
 $(( RANDOM %20 + 1)) rolled
-""
+"
